@@ -1,3 +1,11 @@
+# Introduction
+
+In today's rapidly evolving technological landscape, Artificial Intelligence (AI) has become a powerful tool that empowers developers to enhance their skills and capabilities. AI brings a wide range of possibilities and applications, revolutionizing the way we approach development tasks and unlocking new opportunities for innovation.
+
+
+
+[Running Example](https://1482073.playcode.io/)
+
 ```javascript
 import React, { useState, useEffect } from 'react';
 
@@ -19,7 +27,7 @@ export function App() {
 
     fetchData();
   
-    const interval = setInterval(fetchData, 500); // Fetch data every 5 seconds
+    const interval = setInterval(fetchData, 500); // Fetch data every 0.5 seconds
 
     return () => clearInterval(interval);
   }); // No dependency array (infinite loop)
