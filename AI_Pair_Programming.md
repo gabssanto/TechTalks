@@ -1,18 +1,17 @@
 # Introduction
-> This article is something that will quickly be outdaded due to |the fast pacing progress of AI, but it is a good starting point to understand the current state of AI and how it can be used to enhance the developer experience.
 
-In today's rapidly evolving technological landscape, Artificial Intelligence (AI) has become a powerful tool that empowers developers to enhance their skills and capabilities. AI brings a wide range of possibilities and applications, revolutionizing the way we approach development tasks and unlocking new opportunities for innovation.
-
+In today's rapidly evolving technological landscape, Artificial Intelligence (AI) has emerged as a powerful tool that empowers developers to enhance their skills and capabilities. With its wide range of possibilities and applications, AI revolutionizes the way we approach development tasks, unlocking new opportunities for innovation. Although the fast pace of AI progress may render this article outdated soon, it serves as an excellent starting point for understanding the current state of AI and its potential to enhance the developer experience.
 
 # AI Pair Programming
 
-## Code analysis
+## Code Analysis
 
 ### React Bug Hunt Example
 
-Here I show how to use pair programming to solve a bug in a React application. The bug is that the component is in a loop due to the missing dependency array in the `useEffect` hook. The solution is to add the dependency array. This is an easy case scenario for an experienced developer, but it is a good example to show how AI pair programming can be used to quickly solve bugs, note that for even experienced developers, smalls mistakes like that are pretty common.
+To illustrate the benefits of AI pair programming, let's examine a bug in a React application and demonstrate how AI can quickly resolve it. In this scenario, the bug is caused by a missing dependency array in the `useEffect` hook, resulting in a component being stuck in a loop. While experienced developers may easily identify and rectify such issues, it serves as a practical example of how AI pair programming can expedite bug-solving. It's worth noting that even seasoned developers commonly make small mistakes like this.
 
 [Running Example](https://1482073.playcode.io/)
+
 <details>
   <summary>Code</summary>
 
@@ -61,22 +60,23 @@ export default App;
 ```
 </details>
 
-## Learning curve reduction
+## Learning Curve Reduction
 
-It is possible to use AI to reduce the learning curve of new technologies. For example, if you are learning a new framework, you can use AI to help you with the syntax and the structure of the code. This is a great way to learn new technologies, as you can focus on the concepts and the logic behind the code, instead of worrying about the syntax and the structure of the code.
+AI can significantly reduce the learning curve associated with new technologies. When learning a new framework, for instance, AI can assist with syntax and code structure. This approach offers a valuable way to acquire knowledge by enabling developers to focus on concepts and logic rather than worrying about intricate details like syntax and structure.
 
+To provide a personal example, I recently worked on a project that utilized an older version (4.x.x) of Ruby on Rails (RoR), which differed significantly from the current version. To quickly learn RoR 4.x.x, I leveraged AI to assist me with understanding the syntax and code structure. This approach allowed me to concentrate on grasping the concepts and logic behind the code, ultimately expediting my learning process.
 
+Another example is the integration of Github Copilot with my current code editor, Visual Studio Code, which assists me in finding and using regular expressions (regex) effectively. By utilizing AI, I can focus on the logic behind the regex rather than being burdened by syntax and structure concerns.
 
-To bring a personal example, on work, I had to work on a project which uses Ruby On Rails (RoR), which on the specific version (4.x.x) that the project was using, it was very different from the current version. I had to learn RoR 4.x.x, and I used AI to help me with the syntax and the structure of the code. This was a great way to learn RoR 4.x.x, as I could focus on the concepts and the logic behind the code, instead of worrying about the syntax and the structure of the code.
+In this context, AI refers to tools like Chat GPT and Bing Chat, which facilitate understanding language syntax and framework conventions. These tools expedited my ability to learn syntax and conventions, ultimately improving the code I could deliver for the project.
 
-Another example that I can bring quickly is using Github Copilot, which is integrated with my current Editor (Visual Studio Code), to help me find regex as needed. This is a great use for AI, as I can focus on the logic behind the regex, instead of worrying about the syntax and the structure of the regex.
+## Code
 
-By AI here I mean Chat GPT and Bing Chat to understand the syntax and conventions of the language and the framework. This helped me to quickly learn the syntax and conventions, and improve the code that I could deliver to the project.
+ Generation
 
-## Code generation
+Another valuable application of AI is code generation. Tools like Github's Copilot X can generate code snippets, such as RSpec tests for a Ruby on Rails controller. This approach accelerates the development process by providing a foundation of code that developers can refine and specify for each scenario. It serves as an excellent starting point, enabling faster progress while leaving room for individual fine-tuning.
 
-It is possible to use also new elements like Github's Copilot X to generate code. Let's imagine a controller in Ruby on Rails, we can use it to create a RSpec test for that controller. This is a great way to speed up the development process, as it can generate a lot of code for you, and you can work on specifying each scenarios better later coding by yourself, but it's a great bootstrap to start with.
+## Competitive Advantage
 
-## Competitive advantage
+As AI continues to advance, leveraging its power to enhance developers' productivity will become a competitive advantage. The ability to effectively utilize AI tools will differentiate developers in the future, enabling them to deliver more value to their organizations. Similar to the significance of knowing how to search proficiently on Google today, AI expertise will be a skill that significantly impacts day-to-day work. Mastering AI applications will empower developers to excel and stand out in their roles.
 
-As AI's get more and more powerful, it will become a competitive advantage to use it's powers to enable developers to be more productive. I believe that this will be a key factor for developers to differentiate themselves in the future, as one that can properly use AI to enhance their skills and capabilities will be able to deliver more value to the company. I believe that this will be more or like the same as knowing how to properly search on google is today, it is a skill that is not directly related to the job, but it is a skill that makes a huge difference in day to day work.
