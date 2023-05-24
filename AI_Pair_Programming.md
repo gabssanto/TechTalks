@@ -1,8 +1,8 @@
-# Introduction
+# AI Pair Programming
 
 In today's rapidly evolving technological landscape, Artificial Intelligence (AI) has emerged as a powerful tool that empowers developers to enhance their skills and capabilities. With its wide range of possibilities and applications, AI revolutionizes the way we approach development tasks, unlocking new opportunities for innovation. Although the fast pace of AI progress may render this article outdated soon, it serves as an excellent starting point for understanding the current state of AI and its potential to enhance the developer experience.
 
-# AI Pair Programming
+AI pair programming combines the expertise of human developers with the capabilities of AI models like Chat GPT, enabling a collaborative and synergistic coding experience. By working together, human developers and AI can tackle complex programming challenges more efficiently, improving code quality, productivity, and learning opportunities. This article explores the benefits of AI pair programming and its potential to transform the future of software development by examining scenarios and some examples I have experienced on day to day work, in Backend and Frontend development.
 
 ## Code Analysis
 
@@ -10,12 +10,9 @@ In today's rapidly evolving technological landscape, Artificial Intelligence (AI
 
 To illustrate the benefits of AI pair programming, let's examine a bug in a React application and demonstrate how AI can quickly resolve it. In this scenario, the bug is caused by a missing dependency array in the `useEffect` hook, resulting in a component being stuck in a loop. While experienced developers may easily identify and rectify such issues, it serves as a practical example of how AI pair programming can expedite bug-solving. It's worth noting that even seasoned developers commonly make small mistakes like this.
 
-[Running Example](https://1482073.playcode.io/)
+Consider the following React code snippet:
 
-<details>
-  <summary>Code</summary>
-
-  ```javascript
+```javascript
 import React, { useState, useEffect } from 'react';
 
 export function App() {
@@ -58,7 +55,10 @@ export function App() {
 
 export default App;
 ```
-</details>
+
+In this code, the `useEffect` hook lacks a dependency array, causing the effect to be invoked on every render, resulting in an infinite loop. An AI-powered pair programming tool can quickly identify this issue and suggest adding the missing dependency array, enabling the developer to resolve the bug efficiently.
+
+You can explore and run the code example in this [sandbox](https://1482073.playcode.io/).
 
 ## Learning Curve Reduction
 
@@ -70,9 +70,7 @@ Another example is the integration of Github Copilot with my current code editor
 
 In this context, AI refers to tools like Chat GPT and Bing Chat, which facilitate understanding language syntax and framework conventions. These tools expedited my ability to learn syntax and conventions, ultimately improving the code I could deliver for the project.
 
-## Code
-
- Generation
+## Code Generation
 
 Another valuable application of AI is code generation. Tools like Github's Copilot X can generate code snippets, such as RSpec tests for a Ruby on Rails controller. This approach accelerates the development process by providing a foundation of code that developers can refine and specify for each scenario. It serves as an excellent starting point, enabling faster progress while leaving room for individual fine-tuning.
 
@@ -80,3 +78,4 @@ Another valuable application of AI is code generation. Tools like Github's Copil
 
 As AI continues to advance, leveraging its power to enhance developers' productivity will become a competitive advantage. The ability to effectively utilize AI tools will differentiate developers in the future, enabling them to deliver more value to their organizations. Similar to the significance of knowing how to search proficiently on Google today, AI expertise will be a skill that significantly impacts day-to-day work. Mastering AI applications will empower developers to excel and stand out in their roles.
 
+By embracing AI pair programming and leveraging the capabilities of AI models like Chat GPT, developers can improve their efficiency, productivity, and learning experience. The collaboration between human developers and AI opens up exciting possibilities for the future of software development.
