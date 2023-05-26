@@ -76,10 +76,13 @@ Similarly, tools like GitHub Copilot integrated with code editors can assist dev
 Another valuable application of AI in pair programming is code generation. Tools like GitHub Copilot can generate code snippets based on the context and requirements, accelerating the development process. For instance, in Ruby, using a comment to ask for the desired output or functionality can prompt Copilot to generate the corresponding code snippet. Here's an example:
 
 ```ruby
-# Given an array of integers, return the sum of all elements
-array = [1, 2, 3, 4, 5]
-sum = array.sum
-puts sum
+# Returns the name of the user
+def name
+  @name
+end
+
+# Generate expect for url that matches users/gabssanto?secret_key= but secret key is variable
+expect(url).to match(/users\/gabssanto\?secret_key=(.*)/)
 ```
 
 In React development, Copilot excels at generating code templates for common scenarios, such as a `useEffect` hook with a dependency array. Here's an example:
