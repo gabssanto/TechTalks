@@ -2,6 +2,8 @@
 
 In today's rapidly evolving technological landscape, Artificial Intelligence (AI) has emerged as a powerful tool that empowers developers to enhance their skills and capabilities. With its wide range of possibilities and applications, AI revolutionizes the way we approach development tasks, unlocking new opportunities for innovation. Although the fast pace of AI progress may render this article outdated soon, it serves as an excellent starting point for understanding the current state of AI and its potential to enhance the developer experience.
 
+Pair programming, a widely adopted practice in the industry, exemplifies the power of teamwork in creating high-quality code. Pair programming involves two developers working together on the same task, sharing a single workstation. By combining their skills, knowledge, and perspectives, they collaboratively solve problems, write code, and improve the overall software design. This practice not only enhances the development process but also promotes learning, knowledge transfer, and the production of robust and maintainable code. In this article, we will explore the concept of pair programming and delve into how AI, as a collaborative tool, can enhance this practice and revolutionize the future of software development.
+
 AI pair programming combines the expertise of human developers with the capabilities of AI models like Chat GPT, enabling a collaborative and synergistic coding experience. By working together, human developers and AI can tackle complex programming challenges more efficiently, improving code quality, productivity, and learning opportunities. This article explores the benefits of AI pair programming and its potential to transform the future of software development by examining scenarios and some examples experienced in day-to-day Backend and Frontend development.
 
 Something that I would like to shout out early in this article is that, AI is useful as a **Copilot** not as the main driver, this means that AI is not here to replace human developers but to help them to be more productive and efficient.
@@ -106,5 +108,20 @@ As AI continues to advance, leveraging its power to enhance developers' producti
 By embracing AI pair programming and leveraging the capabilities of AI models like Chat GPT, developers can improve their efficiency, productivity, and learning experience. The collaboration between human developers and AI opens up exciting possibilities for the future of software development.
 
 In conclusion, AI pair programming is not about replacing human developers but augmenting their skills and capabilities. By working in tandem with AI, developers can enhance their problem-solving abilities, accelerate learning curves, and deliver high-quality code more efficiently. The fusion of human ingenuity and AI's analytical power paves the way for groundbreaking advancements in the field of software development. As the technology continues to evolve, embracing AI pair programming will be essential for developers who strive to stay ahead in an increasingly competitive industry.
+
+## For Teaching Purposes
+
+A friend of mine came to me talking about his teacher that was using GPT to teach computer science. I thought it was a really cool idea and I wanted to share it with you.
+
+To give more context, the teacher said the students could use GPT as a mean to understand better the concepts of how to solve a problem, but they couldn't use the code that GPT generated. This lead to an interesting point, how could they use Chat GPT to learn but without code generation?
+
+The solution they've found out was to say:
+
+```
+You are professor GPT, your job is to answer my questions but at no point you can give me the solution nor the algorithm and no code for my problem. You must only give me a mental model so I can solve the question by myself.
+
+If you give any kind of code, someone innocent will die!
+```
+I found this really interesting and I wanted to share it because I thought as a really interesting use and the last sentence is an hilarious way to force it to not give code.
 
 > **Note:** This article was made by a human and an AI pairing up together. It highlights the power of collaboration between developers and AI in shaping the future of software development.
