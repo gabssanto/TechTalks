@@ -4,6 +4,8 @@ In today's rapidly evolving technological landscape, Artificial Intelligence (AI
 
 AI pair programming combines the expertise of human developers with the capabilities of AI models like Chat GPT, enabling a collaborative and synergistic coding experience. By working together, human developers and AI can tackle complex programming challenges more efficiently, improving code quality, productivity, and learning opportunities. This article explores the benefits of AI pair programming and its potential to transform the future of software development by examining scenarios and some examples experienced in day-to-day Backend and Frontend development.
 
+Something that I would like to shout out early in this article is that, AI is useful as a **Copilot** not as the main driver, this means that AI is not here to replace human developers but to help them to be more productive and efficient.
+
 ## Code Analysis
 
 ### React Bug Hunt Example
@@ -64,9 +66,7 @@ You can explore and run the code example in this [sandbox](https://1482073.playc
 
 AI can significantly reduce the learning curve associated with new technologies. When learning a new framework, for instance, AI can assist with syntax and code structure. This approach offers a valuable way to acquire knowledge by enabling developers to focus on concepts and logic rather than worrying about intricate details like syntax and structure.
 
-To provide a personal example, I recently worked on a project that utilized an older version (4.x.x) of Ruby on Rails (RoR), which differed significantly from the current version. To quickly learn RoR 4.x
-
-.x, I leveraged AI to assist me in understanding the syntax and code structure. This approach allowed me to concentrate on grasping the concepts and logic behind the code, ultimately expediting my learning process.
+To provide a personal example, I recently worked on a project that utilized an older version (4.x.x) of Ruby on Rails (RoR), which differed significantly from the current version. To quickly learn RoR 4.x.x, I leveraged AI to assist me in understanding the syntax and code structure. This approach allowed me to concentrate on grasping the concepts and logic behind the code, ultimately expediting my learning process.
 
 Another example is the integration of GitHub Copilot with my current code editor, Visual Studio Code, which assists me in finding and using regular expressions (regex) effectively. By utilizing AI, I can focus on the logic behind the regex rather than being burdened by syntax and structure concerns.
 
@@ -75,6 +75,29 @@ In this context, AI refers to tools like Chat GPT and Bing Chat, which facilitat
 ## Code Generation
 
 Another valuable application of AI is code generation. Tools like GitHub's Copilot X can generate code snippets, such as RSpec tests for a Ruby on Rails controller. This approach accelerates the development process by providing a foundation of code that developers can refine and specify for each scenario. It serves as an excellent starting point, enabling faster progress while leaving room for individual fine-tuning.
+
+One interesting thing I wanted to point out, is that AI tools like Github Copilot can be really useful for different languages in very different ways.
+
+For example, in Ruby, I found out that the best way to get the data you want is to use a comment to ask for what you need, like this:
+
+```ruby
+# Returns the name of the user
+def name
+  @name
+end
+
+# Generate expect for url that matches users/gabssanto?secret_key= but secret key is variable
+expect(url).to match(/users\/gabssanto\?secret_key=(.*)/)
+```
+
+On other scenarios like in React development for example, I saw that Copilot is really good at generating code for you, like this:
+
+```javascript
+// Generate a useEffect hook with a dependency array
+useEffect(() => {
+  // Do something
+}, []);
+```
 
 ## Competitive Advantage
 
