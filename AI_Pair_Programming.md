@@ -2,7 +2,6 @@
 
 AI is in the center of the current discussions this year, and it is not for less. The advances in the field are impressive, and the possibilities are endless. In this article, I will explore the possibilities of AI in the software development field, specifically as an copilot for you day to day work, to help you be more productive and deliver faster.
 
-<!-- ## Table of Contents -->
 ## Pair Programming
 
 Pair programming is a widely adopted practise in the industry, and it exemplifies the power of teamwork in software development. It involves two developers working together on the same task, sharing a workstation. By combining their skills, knowledge, and perspectives, they collaboratively solve problems, write code, and improve the overall software design. This practice not only enhances the development process but also promotes learning, knowledge transfer, and the production of robust and maintainable code.
@@ -89,127 +88,103 @@ Of course sometimes AI couldn't help me, so I had to use the old fashion way of 
 
 This project is currently deployed, and since it's work related I'll not share the code, but wanted to give my statement on how AI helped me overcome this challenge.
 
-<!-- ### Code Generation and Snippet Suggestions: AI at Work
+### Code Generation
 
-### Competitive Advantage through AI Expertise
-
-### AI in Teaching Computer Science: A New Approach
-
-## Conclusion: Embracing the Future of Software Development -->
-
-<!-- ### Ethical Concerns  -->
-
-<!-- Talk about not to use entire files, to use mainly for getting help on snippets if needed, but try to explain the problem instead, to get the answer -->
-
-> **Note**: This article was a collaborative effort between a human and an AI, highlighting the power of collaboration between developers and AI in shaping the future of software development.
-
-
-
-
-<!-- This tool is an AI-powered pair programmer that helps you write code faster and with less effort. It is powered by OpenAI's GPT-3, a powerful language prediction model. This tool is integrated with Visual Studio Code and GitHub Codespaces, and it can be used with other editors through the GitHub Copilot extension. -->
-
-<!-- In the ever-evolving world of technology, have you ever wondered how Artificial Intelligence (AI) could revolutionize the way we approach software development? AI has emerged as a powerful tool that empowers developers to enhance their skills and capabilities. With its wide range of possibilities and applications, AI is transforming the way we approach development tasks, unlocking new opportunities for innovation. Although the fast pace of AI progress may render this article outdated soon, it serves as an excellent starting point for understanding the current state of AI and its potential to enhance the developer experience.
-
-## Unleashing the Power of Teamwork: An Introduction to Pair Programming
-
-Pair programming, a widely adopted practice in the industry, exemplifies the power of teamwork in creating high-quality code. It involves two developers working together on the same task, sharing a single workstation. By combining their skills, knowledge, and perspectives, they collaboratively solve problems, write code, and improve the overall software design. This practice not only enhances the development process but also promotes learning, knowledge transfer, and the production of robust and maintainable code.
-
-## Unleashing the Power of AI in Pair Programming
-
-AI pair programming combines the expertise of human developers with the capabilities of AI models like OpenAI's GPT-3, a powerful language prediction model. This collaboration enables a synergistic coding experience. By working together, human developers and AI can tackle complex programming challenges more efficiently, improving code quality, productivity, and learning opportunities. However, it's important to note that AI should be seen as a **Copilot** rather than the main driver. AI is not here to replace human developers, but rather to assist them in becoming more productive and efficient.
-
-### Code Analysis and Bug Resolution: An Illustration
-
-To illustrate the benefits of AI pair programming, let's examine a bug in a React application and demonstrate how AI can quickly resolve it. Consider a scenario where a missing dependency array in the `useEffect` hook results in a component being stuck in a loop. While experienced developers may easily identify and rectify such issues, it serves as a practical example of how AI pair programming can expedite bug-solving. AI-powered tools can quickly identify issues like missing dependency arrays and suggest solutions, enabling developers to resolve bugs efficiently.
-
-In the given React code snippet, the `useEffect` hook lacks a dependency array, causing the effect to be invoked on every render, resulting in an infinite loop. An AI-powered pair programming tool can quickly identify this issue and suggest adding the missing dependency array, allowing the developer to resolve the bug efficiently.
-
-```javascript
-import React, { useState, useEffect } from 'react';
-
-export function App() {
-  const [counter, setCounter] = useState(0);
-  const [userData, setUserData] = useState(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('https://api.github.com/users/gabssanto');
-        const data = await response.json();
-        setUserData(data);
-        setCounter(counter + 1);
-      } catch (error) {
-        console.log('Error fetching data:', error);
-      }
-    };
-
-    fetchData();
-
-    const interval = setInterval(fetchData, 500); // Fetch data every 0.5 seconds
-
-    return () => clearInterval(interval);
-  }); // Dependency array missing - causes infinite loop
-
-  if (!userData) {
-    return <div>Loading...</div>;
-  }
-
-  return (
-    <div>
-      <h1>{userData.login}</h1>
-      <img src={userData.avatar_url} alt={userData.login} width="200" />
-      <p>Followers: {userData.followers}</p>
-      <p>Public Repositories: {userData.public_repos}</p>
-      Re-renders: {counter}
-    </div>
- );
-}
-
-```
-
-> You can explore and run the code example in this [sandbox](https://1482073.playcode.io/).
-
-By utilizing AI in pair programming, developers can benefit from code analysis and bug resolution capabilities that aid in delivering more efficient and bug-free code.
-
-### Reducing the Learning Curve with AI
-
-AI can significantly reduce the learning curve associated with new technologies. When learning a new framework or language, AI can assist with syntax and code structure, allowing developers to focus on concepts and logic rather than intricate details. For example, in my personal experience, while learning an older version of Ruby on Rails (RoR), I utilized AI to understand the syntax and code structure quickly. This approach expedited my learning process as I could concentrate on grasping the concepts and logic behind the code.
-
-Similarly, tools like GitHub Copilot integrated with code editors can assist developers in understanding language syntax and framework conventions. By leveraging AI, developers can expedite their ability to learn syntax and conventions, ultimately improving the quality of the code they deliver.
-
-### Code Generation and Snippet Suggestions: AI at Work
-
-Another valuable application of AI in pair programming is code generation. Tools like GitHub Copilot can generate code snippets based on the context and requirements, accelerating the development process. For instance, in Ruby, using a comment to ask for the desired output or functionality can prompt Copilot to generate the corresponding code snippet. Here's an example:
+Another benefit of AI pair programming is code generation. Tools like GitHub Copilot, which is powered by OpenAI's Codex, can generate code templates for common scenarios and help generating code for repetitive tasks, such as regexes. Here follows an example of using Copilot to generate a regex for a URL with a variable secret key, the comment is the prompt I gave to Copilot:
 
 ```ruby
-# Returns the name of the user
-def name
-  @name
-end
-
 # Generate expect for url that matches users/gabssanto?secret_key= but secret key is variable
 expect(url).to match(/users\/gabssanto\?secret_key=(.*)/)
 ```
 
-In React development, Copilot excels at generating code templates for common scenarios, such as a `useEffect` hook with a dependency array. Here's an example:
+As you can see, Copilot can help on generating tests, which I found to be one of it's most powerful features, since you can create more complex tests faster, that can cover more edge cases.
 
-```javascript
-useEffect(() => {
-  // Code here
-}, []); // Dependency array
+In other cases, for example, for Frontend development using ReactJS, Copilot is really more proactively helpful, since for Typescript it can help generating and completing types, also generating more often than not, the correct code for the scenario you're in. For example, below is an example of generating an interface for a React Component, I prompted Copilot with the comments, and it automatically generated the interface for me, even based on the props I provided, it concluded that the Component was a Button:
+
+```typescript
+/**
+ * Generate an interface for an react component, which takes the following props
+ * type can be primary, secondary, tertiary
+ * size can be small, medium, large
+ * onClick can be undefined
+ * */
+interface ButtonProps {
+  type: 'primary' | 'secondary' | 'tertiary';
+  size: 'small' | 'medium' | 'large';
+  onClick?: () => void;
+}
 ```
 
-By using AI-generated code snippets as a starting point, developers can save time and effort, allowing them to focus on refining and specifying the code for their specific needs.
+My personal experience, with Frontend development and Backend development using ReactJS and Ruby on Rails respectively is that, Copilot is very proactive in languages such as Javascript and Typescript, usually suggesting a lot of code correctly. In Ruby on Rails, it's not so proactive, so during my personal experience I noticed that I had to change my approach, instead of expecting the code to be generated, to ask what I wanted precisely, then most often than not, it would generate the code correctly.
 
-### Competitive Advantage through AI Expertise
+There's also another example I wanted to share about code generation, which basically consists in generating React Components based on a design pattern, for example, I want to use the Library FabricJS to use it on a canvas, so I asked now Chat GPT to generate for me a base using the Factory Pattern, and it generated the following code.
 
-As AI continues to advance, leveraging its power to enhance developers' productivity will become a competitive advantage. The ability to effectively utilize AI tools will differentiate developers in the future, enabling them to deliver more value to their organizations. Similar to the significance of proficiently searching on Google today, AI expertise will be a skill that significantly impacts day-to-day work. Mastering AI applications will empower developers to excel and stand out in their roles.
+> Prompt: Generate for me an example of using fabricJS to implement a Square and Circle using the Factory Pattern
 
-## AI in Teaching Computer Science: A New Approach
+Here's the result, I've removed things related to implemenation, since it's not the focus of what I want to show here:
 
-AI can also play a role in teaching computer science. For example, students can use AI models like OpenAI's GPT-3 to ask questions and gain a deeper understanding of concepts and problem-solving techniques. However, in teaching scenarios, it's important to establish boundaries and guidelines to ensure that students actively engage in problem-solving rather than relying solely on AI-generated code. One approach is to present the AI as a "Professor" who can provide mental models and explanations without directly giving solutions or code. This encourages students to develop their problem-solving skills and fosters a deeper understanding of the subject matter.
+```typescript
+// First, we define the Factory class
+class ShapeFactory {
+    createShape(type, options) {
+        let shape;
+        switch (type) {
+            case 'square':
+                shape = new fabric.Rect(options);
+                break;
+            case 'circle':
+                shape = new fabric.Circle(options);
+                break;
+            default:
+                throw new Error(`Invalid shape type: ${type}`);
+        }
+        return shape;
+    }
+}
+
+// Initialize our factory
+const shapeFactory = new ShapeFactory();
+```
+
+As you can see, it generated the code correctly, but what if I want to extend this code to generate a Triangle? So I asked Chat GPT to generate for me a Triangle, and it generated exactly what I expected, here's the result, I've removed code that previously was defined, to focus on the new code generated:
+
+```typescript
+// Extend the Factory class to include a triangle
+class ShapeFactory {
+  ...
+  case 'triangle':
+      shape = new fabric.Triangle(options);
+      break;
+  ...
+}
+```
+
+So as you can see, developers and AI can work together to generate code, it may vary based on the language and framwork, but usually those tools can be very powerful to make you more productive.
 
 ## Conclusion: Embracing the Future of Software Development
 
-In conclusion, AI pair programming is a collaborative approach that combines the expertise of human developers with the analytical power of AI models. By working in tandem, developers and AI can enhance problem-solving abilities, accelerate learning curves, and deliver high-quality code more efficiently. The fusion of human ingenuity and AI's capabilities paves the way for groundbreaking advancements in software development. Embracing AI pair programming will be essential for developers who strive to stay ahead in an increasingly competitive industry.
- -->
+As it can be seen in this article, I've shared my personal experience of using AI as a day to day pair programming, to help me overcome challenges, help me deliver faster and better code, and to teach me hows and whys of a particular code, language and framework. My goal is to show the usefulness of AI in software development, and how it can be used to empower developers to be more productive and to learn faster. There are some things I would also like to share before closing this article, which are related to my personal beliefs about AI Pair Programming, the use of AI in teaching which I heard from a friend, and Ethical Concerns that one should always be aware of.
+
+### Competitive Advantage through AI Expertise
+
+I believe that Pair Programming with AI tools is the future of software development, and developers should embrace and learn to use, since I truly believe that it is a competitive advantage, and that developers that don't use it, soon will be behind in terms of productivity and knowledge. I do also think that AI is not here to replace developers, but to empower them, allowing us to focus more on the creative side of software development, and less on the repetitive tasks, so, how to scale an architecture, how to improve the performance of a project, etc.
+
+### AI in Teaching Computer Science: A New Approach
+
+I have a friend who's just starting Computer Science BsC, and he shared something really interesting with me. He said that he knew his students would use Chat GPT to help on assignments, so instead of prohibitting them from using it, he said they could use it to help them understand how to structure the conceptual logic of the problem, and help iterating through it, just like a pair programmer would do.
+
+His teacher asked Chat GPT to use the following prompt:
+
+```
+You are professor GPT, your job is to answer my questions but at no point you can give me the solution nor the algorithm and no code for my problem. You must only give me a mental model so I can solve the question by myself.
+
+If you give any kind of code, someone innocent will die!
+```
+
+I found this very funny, but also very interesting, since it shows that AI can be used to teach Computer Science, and to help students understand the logic behind a problem, and how to solve it, instead of just giving them the solution. My friend also told me that the last joke sentence was added because even though we said we do not want the answer, Chat GPT would have a tendency to give it anyway, so adding the last sentence, it would make it more likely to give a mental model instead of the answer.
+
+### Ethical Concerns: With great power comes great responsibility
+
+One wise man once said: "With great power comes great responsibility", and that's true with the use of AI tools, we as developers should beware of how to use it properly, and to be aware of the ethical concerns that may arise from it. For example, it is not ethical by any means to copy licensed code from a company, and use it on another's companies tools, instead, developers should be capable of explaining the problem to AI's to get help from them based on that, you as a developer is the one who's the Pilot, AI is the Copilot, so you should be the one in control of the code, not the other way around. To conclude, developers should be reponsible for an ethical use of AI tools, for society, for the company they work for, and for themselves.
+
+> **Note**: This article was a collaborative effort between a human and an AI, highlighting the power of collaboration between developers and AI in shaping the future of software development.
